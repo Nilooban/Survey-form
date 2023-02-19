@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Health survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Diet, fitness, and exercise survey Form</h1>
+      <p id="description">
+        Please fill out this form with the required information
+      </p>
+
+      <form method="post" action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Enter your Name"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            title="Please enter a valid email address"
+            placeholder="Enter your Email"
+            class="form-control"
+          >
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="15"
+            max="100"
+            title="Please enter a number between 15 and 100"
+            placeholder="Age"
+            class="form-control"
+          >
+        </div>
+        <div class="form-group">
+          <p>How physically healthy are you?</p>
+          <select id="dropdown" name="dropdown" required class="form-control">
+            <option value="">(Select one)</option>
+            <option value="option1">Not at all Healthy</option>
+            <option value="option1">Relatively Healthy</option>
+            <option value="option2">Extremely Healthy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you take nutritional supplements?</p>
+
+          <label for="radio1">
+            <input
+              type="radio"
+              id="radio1"
+              name="radio-group"
+              value="yes"
+              class="inline"
+            >Yes
+          </label>
+          <label for="radio2">
+            <input
+              type="radio"
+              id="radio2"
+              name="radio-group"
+              value="no"
+              class="inline"
+            >No
+          </label>
+        </div>
+        <div class="form-group">
+          <p>What do you most often do for exercise?</p>
+
+          <label for="checkbox1"
+            ><input
+              type="checkbox"
+              id="checkbox1"
+              name="exercise-group"
+              value="walk"
+              class="input-checkbox"
+            >Walk
+          </label>
+          <label for="checkbox2"
+            ><input
+              type="checkbox"
+              id="checkbox2"
+              name="exercise-group"
+              value="run"
+              class="input-checkbox"
+            >
+            Run</label
+          >
+          <label for="checkbox3"
+            ><input
+              type="checkbox"
+              id="checkbox3"
+              name="exercise-group"
+              value="hike"
+              class="input-checkbox"
+            >Hike
+          </label>
+          <label for="checkbox4"
+            ><input
+              type="checkbox"
+              id="checkbox4"
+              name="exercise-group"
+              value="swim"
+              class="input-checkbox"
+            >Swim
+          </label>
+          <label for="checkbox5"
+            ><input
+              type="checkbox"
+              id="checkbox5"
+              name="exercise-group"
+              value="dance"
+              class="input-checkbox"
+            />Dance
+          </label>
+          <label for="checkbox6"
+            ><input
+              type="checkbox"
+              id="checkbox6"
+              name="exercise-group"
+              value="lift weights"
+              class="input-checkbox"
+            >Lift weights
+          </label>
+          <label for="checkbox7"
+            ><input
+              type="checkbox"
+              id="checkbox7"
+              name="exercise-group"
+              value="pilates"
+              class="input-checkbox"
+            >Pilates
+          </label>
+          <label for="checkbox8"
+            ><input
+              type="checkbox"
+              id="checkbox8"
+              name="exercise-group"
+              value="team sport"
+              class="input-checkbox"
+            >Play a team sport
+          </label>
+          <label for="checkbox9"
+            ><input
+              type="checkbox"
+              id="checkbox9"
+              name="exercise-group"
+              value="other"
+              class="input-checkbox"
+            >Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>What are your health and fitness goals?</p>
+
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Enter your comment here"
+            class="input-textarea"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
